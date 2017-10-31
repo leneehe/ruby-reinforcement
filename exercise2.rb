@@ -34,9 +34,18 @@ elsif dramas >= 4 && comedies < 4
   puts "You like dramas, I recommend you to watch \"#{drama_film}\"."
 elsif dramas < 4 && comedies >= 4
   puts "You like comedies, I recommend you to watch \"#{comedy_film}\"."
-else
-  puts "I recommend you to read \"#{book}\"."
+elsif documentaries < 4 && dramas < 4 && comedies < 4
+  if documentaries > dramas && documentaries > comedies
+    puts "You like documentaries more, I recommend you to watch \"#{documentary_film}\"."
+  elsif dramas > documentaries && dramas > comedies
+    puts "You like dramas more, I recommend you to watch \"#{drama_film}\"."
+  elsif comedies > documentaries && comedies > dramas
+    puts "You like comedies more, I recommend you to watch \"#{comedy_film}\"."
+  else
+    puts "I recommend you to read \"#{book}\"."
+  end
 end
+
 
 
 
