@@ -42,13 +42,15 @@ end
 
 if documentaries == true
   puts "You like documentaries, I recommend you to watch \"#{documentary_film}\"."
-elsif dramas == true && comedies == true
+end
+
+if dramas == true && comedies == true
   puts "You like dramas and comedies, I recommend you to watch \"#{dramedy_film}\"."
 elsif dramas == true && comedies == false
   puts "You like dramas, I recommend you to watch \"#{drama_film}\"."
 elsif dramas == false && comedies == true
   puts "You like comedies, I recommend you to watch \"#{comedy_film}\"."
-else
+elsif documentaries == false
   puts "I recommend you to read \"#{book}\"."
 end
 
