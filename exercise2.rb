@@ -5,10 +5,6 @@ drama_film = "West World"
 dramedy_film = "Friends"
 book = "The Notebook"
 
-documentaries = nil
-dramas = nil
-comedies = nil
-
 def get_rating
   user_rating = gets.chomp.to_i
   #Check rating is on scale of 1 to 5
@@ -19,7 +15,6 @@ def get_rating
   return user_rating
 end
 
-# while documentaries == nil && dramas == nil && comedies == nil
     #Question 1
     puts "What is your appreciation for documentaries? on a scale of 1-5"
       documentaries = get_rating
@@ -29,7 +24,6 @@ end
     #Question 3
     puts "What is your appreciation for comedies? on a scale of 1-5"
       comedies = get_rating
-# end
 
 
 if documentaries >= 4

@@ -5,10 +5,6 @@ drama_film = "West World"
 dramedy_film = "Friends"
 book = "The Notebook"
 
-documentaries = nil
-dramas = nil
-comedies = nil
-
 def get_answer
   user_answer = gets.chomp
   #Check answer is 'yes' or 'no'
@@ -19,7 +15,6 @@ def get_answer
   return user_answer
 end
 
-while documentaries == nil && dramas == nil && comedies == nil
     #Question 1
     puts "Do you enjoy documentaries?"
       answer = get_answer
@@ -44,7 +39,6 @@ while documentaries == nil && dramas == nil && comedies == nil
       else
         comedies = false
       end
-end
 
 if documentaries == true
   puts "You like documentaries, I recommend you to watch \"#{documentary_film}\"."
